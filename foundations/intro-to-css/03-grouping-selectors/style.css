@@ -1,1 +1,37 @@
 /* Add CSS Styling */
+
+/* This is my original solution. Everything worked, but instead of combining the 
+class selectors for the elements that share the styles, I made a separate class. */
+
+/*
+.first {
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+}
+
+.second {
+    background-color: hsl(60, 100%, 50%);
+}
+
+.font-upgrade {
+    font-family: "Helvetica", "Times New Roman", sans-serif;
+    font-size: 28px;
+}
+*/
+
+/* After completing, and looking at solution, here is my 
+upgraded grouping selector for the elements that share the same styles */
+.first, 
+.second {
+    font-family: "Helvetica", "Times New Roman", sans-serif;
+    font-size: 28px;
+}
+
+.first {
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+}
+
+.second {
+    background-color: hsl(60, 100%, 50%);
+}
